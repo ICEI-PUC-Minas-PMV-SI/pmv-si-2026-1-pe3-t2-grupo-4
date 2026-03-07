@@ -12,4 +12,4 @@ Diante da problemática apresentada ([Problema](problema.md)), o trabalho visa a
 
 - Há também um controle de estoque de peças e itens da oficina, com rastreio de fornecedores, cotação de preços e verificação de compatibilidade de peças com o veículo em manutenção ou melhoria. O cliente poderá consultar online, em tempo real, a disponibilidade dessas peças na oficina e obter uma consultoria sobre a compatibilidade e a performance que a peça terá em seu veículo.
 
-- Automatizar processos manuais e burocráticos permitirá que as oficinas ganhem mais eficiência e produtividade no que têm de melhor. O sistema funcionará como um painel agregador que ajudará a equipe a ter controle e visão de tudo o que acontece na oficina — desde agendamentos, estoque e financeiro até procedimentos — de forma fácil e sincronizada.
+- Automatizar processos manuais e burocráticos permitirá que as oficinas ganhem mais eficiência e produtividade no que têm de melhor. O sistema funcionará como um painel agregador que ajudará a equipe a ter controle e visão de tudo o que acontece na oficina, desde agendamentos, estoque e financeiro até procedimentos, de forma fácil e sincronizada.
