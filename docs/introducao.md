@@ -11,9 +11,16 @@ A implementação de um sistema de agendamento implica no amadurecimento da empr
 Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. 
 Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
 
-## 1.2. Objetivos do Trabalho [*](objetivo.md)
+## 1.2. Objetivos do Trabalho
+### Objetivo Geral
+Este trabalho tem o objetivo de desenvolver um software para tornar a rotina dos profissionais do setor de mecânica e manutenção automotiva mais prática e eficiente, eliminando a burocracia e o descontrole nos processos de estoque, financeiro e agendamento. Por meio da automatização dessas tarefas, o profissional poderá concentrar-se em prestar um serviço de qualidade, economizando tempo, recursos e energia.
+### Objetivos Específicos
+- Implementar um sistema de agendamento online que permita ao cliente visualizar a disponibilidade do profissional em tempo real e acompanhar o status de seu atendimento por meio de um painel Kanban.
+- Desenvolver um módulo de controle de estoque com rastreio de fornecedores, cotação de preços e verificação de compatibilidade de peças com o veículo em atendimento.
+- Disponibilizar um painel gerencial integrado que ofereça à equipe visibilidade centralizada sobre agendamentos, estoque, financeiro e procedimentos em andamento.
+- Criar um marketplace que permita ao cliente localizar oficinas credenciadas, consultar a disponibilidade de peças e serviços por localidade e realizar buscas por itens específicos.
+- Implementar um sistema de cotação de preços que possibilite a comparação de valores entre fornecedores cadastrados, promovendo transparência e auxiliando o cliente na tomada de decisão.
 
-Este projeto tem como objetivo atender à demanda de tornar a rotina dos profissionais do setor de mecânica e manutenção automotiva mais prática, isentando-os da burocracia, da desordem, do descontrole e das preocupações constantes com estoque, financeiro, agendamento e outros processos manuais. Ao automatizar essas tarefas repetitivas por meio de um software, o profissional poderá concentrar-se em prestar um bom serviço e atender seus clientes da melhor forma possível, economizando tempo, recursos e energia. Além disso, a plataforma aproxima oficinas e clientes por meio de um marketplace integrado, oferecendo recursos de cotação de preços, busca de oficinas por localidade e pesquisa de peças e itens disponíveis em estoque.
 
 ## 1.3. Justificativa
 
