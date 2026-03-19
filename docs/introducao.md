@@ -4,7 +4,7 @@ Desde 2019, o preço de carros novos aumentou aproximadamente 85% (BALCÃO AUTOM
 
 O aumento no fluxo de serviços nas oficinas mecânicas exige a implementação de um modelo organizado e com priorização, visando um melhor desempenho e manter a competitividade no mercado. Nesse contexto, de acordo com Reparação Automotiva (2021a), diversos setores de prestação de serviços já têm adotado um sistema de agendamento. Contudo, muitos empresários do setor mecânico automotivo ainda são relutantes em adotar essa modernização, seja pela dificuldade de implementação desse modelo, pela cultura do setor ou pelo pensamento de alguns que acreditam que o sistema pode resultar em mais burocracia.
 
-A implementação de um sistema de agendamento implica o amadurecimento da empresa, consequentemente afetando o seu crescimento. Segundo Reparação Automotiva (2021b), esse modelo de agendamento traz maior eficiência, controle e previsibilidade, proporcionando ao empresário uma visão antecipada da demanda, facilitando a gestão da compra de insumos e distribuição dos serviços, evitando prejuízos à produtividade. Além disso, uma agenda traz inúmeros benefícios, desde que implementada de maneira 
+A implementação de um sistema de agendamento implica o amadurecimento da empresa, consequentemente afetando o seu crescimento. Segundo Reparação Automotiva (2021b), esse modelo de agendamento traz maior eficiência, controle e previsibilidade, proporcionando ao empresário uma visão antecipada da demanda, facilitando a gestão da compra de insumos e distribuição dos serviços, evitando prejuízos à produtividade. Além disso, uma agenda traz inúmeros benefícios, desde que implementada de maneira correta.
 
 ## 1.1. Problema
 
