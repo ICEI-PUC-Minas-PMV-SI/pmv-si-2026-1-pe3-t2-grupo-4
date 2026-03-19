@@ -1,7 +1,5 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
 ## 3.1 Objetivos deste documento
 O objetivo deste documento é especificar as necessidades de prestadores de serviços automotivos e seus clientes que deverão ser atendidas pelo sistema proposto, denominado AgendaCar.
 
@@ -14,16 +12,21 @@ O produto será denominado AgendaCar. O sistema consiste em uma plataforma digit
 Otimizar a organização dos atendimentos de prestadores de serviços automotivos e melhorar a experiência dos clientes por meio de um sistema que facilite a busca e o agendamento de serviços.
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O AgendaCar não irá abranger funcionalidades relacionadas ao controle de estoque e de gestão financeira dos prestadores de serviços, como controle de receitas, despesas ou emissão de relatórios financeiros. O foco do sistema será a realização de agendamentos de serviços e a intermediação entre clientes e prestadores.
 
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Praticidade na busca por serviços automotivos |	Essencial |
+|2	| Facilidade no gerenciamento de agendamentos	| Essencial | 
+|3 | Acesso a informações detalhadas sobre prestadores e serviços | Essencial | 
+|4 | Facilidade na contratação de serviços | Essencial | 
+|5	| Organização dos agendamentos realizados	| Essencial | 
+|6	| Maior transparência por meio de avaliações de usuários	| Recomendável |
+|7	| Melhoria na comunicação com os clientes	| Recomendável | 
+
+
 
 ## 3.3 Descrição geral do produto
 
