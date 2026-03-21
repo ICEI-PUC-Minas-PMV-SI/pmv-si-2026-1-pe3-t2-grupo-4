@@ -23,8 +23,8 @@ O AgendaCar não irá abranger funcionalidades relacionadas ao controle de estoq
 |3 | Acesso a informações detalhadas sobre prestadores e serviços | Essencial | 
 |4 | Facilidade na contratação de serviços | Essencial | 
 |5	| Organização dos agendamentos realizados	| Essencial | 
-|6	| Maior transparência por meio de avaliações de usuários	| Recomendável |
-|7	| Melhoria na comunicação com os clientes	| Recomendável | 
+|6	| Maior transparência por meio de avaliações de usuários	| Desejável |
+|7	| Melhoria na comunicação com os clientes	| Desejável | 
 
 
 
@@ -34,19 +34,19 @@ O AgendaCar não irá abranger funcionalidades relacionadas ao controle de estoq
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição | Prioridade |
 |--------------------|------------------------------------|----------------------------------------|------------|
-| RF1 | Acessos ao sistema |	O usuário deve realizar login utilizando e-mail e senha. | ESSENCIAL |
-| RF2 |	Gerenciamento de usuários	| O usuário deve manutenir seus dados cadastrais no sistema. | ESSENCIAL |
-| RF3	| Filtro de prestadores |	O cliente pode filtrar prestadores por categoria, localização e avaliação. | ESSENCIAL |
-| RF4	| Agendamento de serviços |	O cliente deve agendar a prestação de serviços no sistema. | ESSENCIAL |
-| RF5	| Gerenciamento da agenda |	O prestador deve gerenciar sua disponibilidade e quantidade de vagas na agenda. | ESSENCIAL |
-| RF6	| Gerenciamento de serviços e produtos |	O prestador deve catalogar no sistema seus serviços e produtos oferecidos. | ESSENCIAL |
-| RF7	| Alteração e cancelamento de agendamentos |	O usuário pode alterar/cancelar os agendamentos. | ESSENCIAL |
-| RF8	| Avaliação dos prestadores |	O cliente pode avaliar os prestadores de serviços. | DESEJÁVEL |
-| RF9	| Emissão de relatórios |	O prestador pode emitir relatórios de agendamentos. | DESEJÁVEL |
-| RF10	| Solicitação de pré-diagnóstico |	O cliente pode solicitar um pré-diagnóstico ao prestador antes do agendamento. | DESEJÁVEL |
-| RF11	| Bloqueio de agendamentos |	O sistema deve bloquear conflitos de agendamentos. | DESEJÁVEL |
-| RF12	| Tempo limite para cancelamento |	O usuário não pode alterar/cancelar um agendamento com menos de 24 horas de antecedência. | DESEJÁVEL |
-| RF13	| Aprovação de orçamentos |	O prestador de serviços pode enviar orçamentos e solicitar a aprovação do cliente. | OPCIONAL |
+| RF1 | Acessos ao sistema |	O usuário deve realizar login utilizando e-mail e senha. | Essencial |
+| RF2 |	Gerenciamento de usuários	| O usuário deve manutenir seus dados cadastrais no sistema. | Essencial |
+| RF3	| Filtro de prestadores |	O cliente pode filtrar prestadores por categoria, localização e avaliação. | Essencial |
+| RF4	| Agendamento de serviços |	O cliente deve agendar a prestação de serviços no sistema. | Essencial |
+| RF5	| Gerenciamento da agenda |	O prestador deve gerenciar sua disponibilidade e quantidade de vagas na agenda. | Essencial |
+| RF6	| Gerenciamento de serviços e produtos |	O prestador deve catalogar no sistema seus serviços e produtos oferecidos. | Essencial |
+| RF7	| Alteração e cancelamento de agendamentos |	O usuário pode alterar/cancelar os agendamentos. | Essencial |
+| RF8	| Avaliação dos prestadores |	O cliente pode avaliar os prestadores de serviços. | Desejável |
+| RF9	| Emissão de relatórios |	O prestador pode emitir relatórios de agendamentos. | Desejável |
+| RF10	| Solicitação de pré-diagnóstico |	O cliente pode solicitar um pré-diagnóstico ao prestador antes do agendamento. | Desejável |
+| RF11	| Bloqueio de agendamentos |	O sistema deve bloquear conflitos de agendamentos. | Desejável |
+| RF12	| Tempo limite para cancelamento |	O usuário não pode alterar/cancelar um agendamento com menos de 24 horas de antecedência. | Desejável |
+| RF13	| Aprovação de orçamentos |	O prestador de serviços pode enviar orçamentos e solicitar a aprovação do cliente. | Opcional |
 
 ### 3.3.2 Requisitos Não Funcionais
 
@@ -63,10 +63,9 @@ O AgendaCar não irá abranger funcionalidades relacionadas ao controle de estoq
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
-|--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+|-----------------|---------------------------------------|
+| Prestador de serviços |	O prestador de serviços será o usuário responsável por gerenciar as solicitações de agendamentos dos clientes, podendo aceitar ou recusar de acordo com seu interesse. Também será responsável por catalogar no sistema os produtos e serviços oferecidos em seu estabelecimento. |
+| Cliente |	Caberá ao usuário cliente selecionar no sistema o prestador de seu interesse e solicitar o agendamento dos serviços. Além disso, será de sua responsabilidade avaliar os prestadores após a realização do atendimento. |
 
 ## 3.4 Modelagem do Sistema
 
@@ -79,52 +78,56 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+#### Solicitar Agendamento (CSU-01)
 
-#### Gerenciar Professor (CSU01)
+Sumário: O cliente escolhe um prestador no sistema e solicita o agendamento na data e horário de seu interesse, podendo descrever brevemente sua necessidade.
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Ator Primário: Cliente
 
-Ator Primário: Secretária.
+Ator Secundário: Prestador
 
-Ator Secundário: Coordenador.
-
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Pré-condições: O cliente deve estar logado no sistema.
 
 Fluxo Principal:
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+1) 	O cliente escolhe um prestador no sistema.
+2) 	O sistema apresenta o catálogo de produtos e serviços do prestador escolhido, juntamente com as opções ‘escolher outro prestador’ e ‘solicitar agendamento’.
+3) 	Caso o cliente selecione a opção ‘escolher outro prestador’, o caso de uso retorna à etapa 1; caso contrário, o caso de uso segue o fluxo.
+4) 	Após a escolha da opção ‘solicitar agendamento’, o sistema apresenta um calendário com datas/horários disponibilizados pelo prestador.
+5) 	O cliente seleciona a data/horário de seu interesse e o sistema apresenta as opções ‘confirmar solicitação’ e ‘escolher outra data/horário’.
+6) 	Caso o cliente selecione a opção ‘escolher outra data/horário’, o caso de uso retorna à etapa 4; caso contrário, a solicitação é confirmada e o caso de uso é concluído. <br>
 
-Fluxo Alternativo (3): Inclusão
+Pós-condições: O prestador recebe a solicitação do cliente e escolhe aceitar ou recusar, gerenciando dessa forma seus agendamentos.
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+#### Gerenciar agendamentos (CSU-02)
 
-Fluxo Alternativo (3): Remoção
+Sumário: O prestador recebe as solicitações dos clientes com informações de data/horário e uma breve descrição da demanda, podendo aceitar, recusar ou propor uma nova data/horário para realizar o atendimento.
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+Ator Primário: Prestador
 
-Fluxo Alternativo (3): Alteração
+Ator Secundário: Cliente
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+Pré-condições: O prestador deve estar logado no sistema.
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+Fluxo Principal:
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+1) 	O prestador recebe uma solicitação de agendamento no sistema.
+2) 	O sistema apresenta as opções ‘aceitar’, ‘recusar’ e ‘propor uma nova data/horário’.
+3) 	Se o prestador escolher a opção ‘aceitar’, o agendamento é confirmado e o caso de uso é concluído.
+4) 	Se o prestador escolher a opção ‘recusar’, o agendamento é cancelado, o cliente é informado sobre a recusa e o caso de uso é concluído.
+5) 	Se o prestador escolher a opção ‘propor uma nova data/horário’, o sistema apresenta um calendário com datas/horários.
+6) 	O prestador informa a data/horário de sua disponibilidade, o sistema envia a proposta ao cliente e o caso de uso é concluído. <br>
+
+Fluxo Alternativo (etapa 2):
+
+1) 	O prestador não responde à solicitação do cliente e não sugere uma nova data/horário.
+2) 	Após 24h da abertura da solicitação, o sistema recusa automaticamente e informa ao cliente que o prestador não respondeu.
+3) 	O sistema apresenta ao cliente as opções ‘solicitar novamente ao mesmo prestador’ e ‘solicitar a outro prestador’.
+4) 	Caso o cliente selecione ‘solicitar novamente ao mesmo prestador’, o caso de uso retorna à etapa 4 do CSU-01 (Solicitar agendamento).
+5) 	Caso o cliente selecione ‘solicitar a outro prestador’, o caso de uso retorna ao início do CSU-01 (Solicitar agendamento). <br>
+
+Pós-condições: O sistema informa ao prestador que ter um percentual de recusas elevado influencia na sua avaliação.
+
 
 ### 3.4.3 Diagrama de Classes 
 
