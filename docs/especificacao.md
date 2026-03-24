@@ -247,7 +247,8 @@ Pós-condições: O usuário é cadastrado com sucesso com o tipo definido corre
 
 **Pós-condições:**
 O usuário acessa o sistema com sucesso e executa as funcionalidades conforme seu perfil (cliente ou prestador).
-<img width="1103" height="625" alt="image" src="https://github.com/user-attachments/assets/69942e61-7c49-4b8a-baea-226970ff045e" />
+<img width="1363" height="972" alt="image" src="https://github.com/user-attachments/assets/e5881b4e-aed8-43f7-b550-0c11870a9e19" />
+
 
 
 ### 3.4.3 Diagrama de Classes 
