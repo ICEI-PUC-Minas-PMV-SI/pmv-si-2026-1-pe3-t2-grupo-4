@@ -148,6 +148,34 @@ Fluxo Principal:
 
 Pós-condições: A avaliação torna-se visível no perfil público do prestador para outros usuários. Além do prestador receber uma notificação informando que recebeu uma nova avaliação (sem permissão para editá-la ou excluí-la).
 
+#### Cadastro de Usuário (CSU-04)
+
+Sumário: O usuário cadastra suas informações para que possa utilizar o sistema, definindo se é do tipo cliente ou prestador de serviço.
+
+Ator Primário: Usuário (Cliente/Prestador)
+
+Fluxo Principal:
+1. O usuário acessa a tela de cadastro.
+2. O usuário preenche as informações necessárias para cadastro.
+3. O usuário seleciona o tipo de cadastro:
+   - Cliente.
+   - Prestador de Serviço. 
+4. O usuário confima o cadastro.
+6. O sistema valida as informações do cadastro.
+7. O sistema cria a conta.
+8. O sistema confirma o cadastro.
+
+Fluxo Alternativo (etapa 6)
+1. Os dados são inválidos:
+   1. O sistema informa ao usuário que os dados estão inválidos.
+   2. O sistema retorna ao passo 2 do fluxo principal.
+  
+2. E-mail já cadastrado:
+   1. O sistema informa que o e-mail usado já está sendo usado.
+   2. O sistema retorna ao passo 2 do fluxo principal.
+  
+Pós-condições: O usuário é cadastrado com sucesso com o tipo definido corretamente.
+
 ### 3.4.3 Diagrama de Classes 
 
 A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
