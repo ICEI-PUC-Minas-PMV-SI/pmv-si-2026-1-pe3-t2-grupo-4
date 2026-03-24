@@ -176,7 +176,9 @@ Fluxo Alternativo (etapa 6)
   
 Pós-condições: O usuário é cadastrado com sucesso com o tipo definido corretamente.
 
-**Fluxo Principal CSU-05 e CSU-06 – Autenticação:**
+#### Gerenciamento da agenda e Gerenciamento de serviços e produtos (CSU-05 e CSU-06)
+
+**Fluxo Principal – Autenticação:**
 
 1. O usuário acessa a tela de login.
 2. O usuário informa suas credenciais de acesso.
