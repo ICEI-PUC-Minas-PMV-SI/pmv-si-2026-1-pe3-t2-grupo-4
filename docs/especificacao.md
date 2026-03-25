@@ -164,6 +164,7 @@ Fluxo Principal:
 8. O sistema confirma o cadastro.
 
 Fluxo Alternativo
+
 6A. Os dados são inválidos:
    1. O sistema informa ao usuário que os dados estão inválidos.
    2. O sistema retorna ao passo 2 do fluxo principal.
