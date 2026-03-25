@@ -163,12 +163,12 @@ Fluxo Principal:
 7. O sistema cria a conta.
 8. O sistema confirma o cadastro.
 
-Fluxo Alternativo (etapa 6)
-1. Os dados são inválidos:
+Fluxo Alternativo
+6A. Os dados são inválidos:
    1. O sistema informa ao usuário que os dados estão inválidos.
    2. O sistema retorna ao passo 2 do fluxo principal.
   
-2. E-mail já cadastrado:
+6B. E-mail já cadastrado:
    1. O sistema informa que o e-mail usado já está sendo usado.
    2. O sistema retorna ao passo 2 do fluxo principal.
   
