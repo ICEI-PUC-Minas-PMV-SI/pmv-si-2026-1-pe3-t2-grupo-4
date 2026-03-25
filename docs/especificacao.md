@@ -198,6 +198,7 @@ a. Os dados são inválidos:
    1. O sistema informa ao usuário que os dados estão inválidos.
    2. O sistema retorna ao passo 2 do fluxo principal.
 
+Pós-condições: As informações do usuário são alteradas com sucesso de acordo com o formulário submetido.
 
 #### Gerenciamento da agenda e Gerenciamento de serviços e produtos (CSU-06 e CSU-07)
 
