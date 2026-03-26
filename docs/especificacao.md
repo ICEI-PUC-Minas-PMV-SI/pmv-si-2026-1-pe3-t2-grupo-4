@@ -45,6 +45,7 @@ O AgendaCar não irá abranger funcionalidades relacionadas ao controle de estoq
 | RF9	| Prestador emite relatório |	O prestador pode emitir relatórios de agendamentos. | Desejável |
 | RF10	| Cliente solicita pré-diagnóstico ao prestador |	O cliente pode solicitar um pré-diagnóstico ao prestador antes do agendamento. | Desejável |
 | RF11	| Prestador envia o orçamento |	O prestador de serviços pode enviar orçamentos e solicitar a aprovação do cliente. | Opcional |
+| RF12	| Usuário altera tema do sistema |	O usuário poderá alterar o tema escuro ou claro no sistema. | Opcional |
 
 ### 3.3.2 Requisitos Não Funcionais
 
@@ -55,8 +56,7 @@ O AgendaCar não irá abranger funcionalidades relacionadas ao controle de estoq
 | RNF3 |	A aplicação deve suportar aumentos no volume de requisições. |
 | RNF4 |	O sistema deve estar disponível 24/7. |
 | RNF5 |	Os carregamentos entre páginas e módulos devem ter apenas 3seg de carregamento. |
-| RNF6 |	O sistema poderá apresentar tema escuro e claro. |
-| RNF7 |	O sistema deve respeitar as leis locais (LGPD). |
+| RNF6 |	O sistema deve respeitar as leis locais (LGPD). |
 
 ### 3.3.3 Usuários 
 
